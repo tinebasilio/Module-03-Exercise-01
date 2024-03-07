@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module03Layout.RelativeLayoutPage">
+    <ContentPage.Content>
+        
+        <RelativeLayout>
+            <Image Source="relativeLayoutImage.jpg"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+                   HeightRequest="{OnPlatform iOS=200, Android=130}"
+                   WidthRequest="{OnPlatform iOS=200, Android=130}"/>
+
+            <Label Text="RelativeLayout Demo"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=141}"
+                   FontAttributes="Bold"/>
+        </RelativeLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

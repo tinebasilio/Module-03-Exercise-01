@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module03Layout.MainPage"
+             Title="KRISTINE ANGELI B. BASILIO">
+
+    <StackLayout Margin="35">
+        <Label Text="Layout Options" 
+           HorizontalOptions="CenterAndExpand" 
+           VerticalOptions="CenterAndExpand"
+           FontAttributes="Bold"
+           FontSize="Title"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Stack Layout" 
+                    Clicked="OnStackLayoutPage" 
+                    Grid.Row="0" 
+                    Grid.Column="0"/>
+            
+            <Button Text="Absolute Layout" 
+                    Clicked="OnAbsoluteLayoutPage" 
+                    Grid.Row="0" 
+                    Grid.Column="1"/>
+            
+            <Button Text="Relative Layout" 
+                    Clicked="OnRelativeLayoutPage" 
+                    Grid.Row="1" 
+                    Grid.Column="0"/>
+            
+            <Button Text="Grid Layout" 
+                    Clicked="OnGridLayoutPage" 
+                    Grid.Row="1" 
+                    Grid.Column="1"/>
+        </Grid>
+    </StackLayout>
+
+
+</ContentPage>
